@@ -8,27 +8,41 @@
 </div>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
+  <link rel="stylesheet" href="sininho.css">
+  <script src="sininho.js"></script>
 </head>
 <body>
   <header>
-    <h1>Filmes da Minha Izinha💖
+    <h1>Filmes da Minha Izinha 💖 
+      <span id="sininho" class="sininho">🔔<span id="contador" class="contador">0</span></span>
     </h1>
     <p>Escolha um filme para assistir, amorzinho ✨</p>
   </header>
-
-  <h2 class="monster-title">🎬 Monster High</h2>
+  
+  <!-- Modal fofinha -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="fechar" class="fechar">&times;</span>
+      <h2>💖 Olá, amorzinho!</h2>
+      <p>Olá, amorzinho!!! já lembrou de falar que me ama hoje?</p>
+      <img src="img\hellokittybatman.png" alt="Hello Kitty" class="modal-img">
+    </div>
+  </div>
+  <h2 class="monster-title">
+    <img src="img\monsterHIgh.png" alt="Monster High" class="monster-logo">
+  </h2>
   <main class="filmes">
 
     <div class="filme">
       <img src="https://m.media-amazon.com/images/S/pv-target-images/dd94c048c5f84f259292c92ddc326548ff13cd5f3cdd57733caa20c8549e819a.jpg" alt="A Fuga Da Ilha Do Esqueleto">
       <h2>A Fuga Da Ilha Do Esqueleto</h2> 
 <button onclick="abrirModal('https://www.primevideo.com/-/pt/detail/Monster-High-Fuga-da-Ilha-do-Esqueleto/0OO13GL3FTLNEOMEUHXENHAN16', 'https:https://www.tokyvideo.com/br/video/monster-high-fuga-da-ilha-do-esqueleto')">▶ Assistir</button>
-<button onclick="abrirDescricao('As monstrinhas partem para uma aventura incrível em uma ilha misteriosa cheia de segredos e perigos! 🌴💀')">📖 Descrição</button>
+<button onclick="abrirDescricao('Lagoona pensa que levará seus amigos para a Grande Barreira de Corais nas férias de primavera, mas eles acabam em Skull Shores correndo para salvar suas vidas. 🌴💀')">📖 Descrição</button>
 </div>
     
 
     <div class="filme">
-      <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fbr.web.img3.acsta.net%2Fpictures%2F15%2F01%2F13%2F14%2F02%2F257027.jpg&sp=1755458132T862e271297fc29342f5199491a666f58c9d2793dfbbe1fd8a657879e0a00c40b"alt="Assombrada">
+      <img src="img\assombrada.jpeg"alt="Assombrada">
       <h2>Assombrada</h2>
       <button onclick="abrirModal('https://www.primevideo.com/-/pt/detail/Monster-High-Assombrada/0IIDK38IUTMJFK38MXCN2582NH', 'https://www.tokyvideo.com/br/video/monster-high-assombrada')">▶ Assistir</button>
     </div>
@@ -101,7 +115,7 @@
 
   <div id="modalDescricao" class="modal">
     <div class="modal-content hello-kitty">
-      <img src="https://i.pinimg.com/originals/9c/4f/21/9c4f216fd8a5eea7b731bb5ddf9cb853.png" alt="Hello Kitty" class="kitty-img">
+      <img src="img\hello kitty descrição.png" alt="Hello Kitty" class="kitty-img">
       <h2>💖 Descrição do Filme 💖</h2>
       <p id="descricaoTexto">Aqui vai a descrição do filme...</p>
       <button class="close" onclick="fecharDescricao()">❌ Fechar</button>

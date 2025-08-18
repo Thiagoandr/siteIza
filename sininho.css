@@ -1,0 +1,57 @@
+.sininho {
+    cursor: pointer;
+    font-size: 1.5em;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .contador {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ff69b4;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(255,182,193,0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: #fff0f5;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    position: relative;
+  }
+  
+  .modal-content h2 {
+    color: #ff69b4;
+  }
+  
+  .modal-content .modal-img {
+    height: 100px;
+    margin-top: 10px;
+  }
+  
+  .fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+  }

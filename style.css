@@ -1,3 +1,19 @@
+.monster-title {
+  text-align: center; /* centraliza o título */
+  margin: 20px 0; /* espaço acima e abaixo */
+}
+
+.monster-logo {
+  height: 200px; /* ajusta a altura da imagem */
+  width: auto; /* mantém proporção */
+  border-radius: 10px; /* cantinhos arredondados, deixa mais fofo */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* sombra suave */
+}
+
+
+
+
+
 #modalDescricao {
   display: none;
   position: fixed;
