@@ -6,14 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
     let notificacoes = 0;
   
-    // Simula chegada de notificação a cada 10 segundos (para teste)
+    // Simula chegada de notificação
     setInterval(() => {
       notificacoes++;
       contador.textContent = notificacoes;
-    }, 10000); // 10000ms = 10 segundos
+    }, 10000);
   
-    // Clicar no sininho abre a modal e zera contador
-    sininho.addEventListener('click', () => {
+    // Abrir modal apenas clicando no sininho
+    sininho.addEventListener('click', (e) => {
+      e.stopPropagation(); // importante para não propagar clique
       if(notificacoes > 0){
         modal.style.display = 'flex';
         notificacoes = 0;
@@ -21,14 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   
-    // Fechar modal
-    fechar.onclick = () => modal.style.display = 'none';
+    // Fechar modal clicando no X
+    fechar.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
   
-    // Fechar clicando fora da modal
-    window.onclick = (event) => {
-      if(event.target === modal) {
+    // Fechar modal clicando fora do conteúdo
+    modal.addEventListener('click', (e) => {
+      if(e.target === modal){
         modal.style.display = 'none';
       }
-    }
+    });
   });
-  
