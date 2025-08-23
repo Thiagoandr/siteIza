@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sininho = document.getElementById('sininho');
     const contador = document.getElementById('contador');
-    const modal = document.getElementById('modal');
+    const modal = document.getElementById('modalnotificacao');
     const fechar = document.getElementById('fechar');
   
     let notificacoes = 0;
