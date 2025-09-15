@@ -198,6 +198,14 @@ header::before {
   opacity: 0.8;
   animation: floatEffect 4s ease-in-out infinite alternate;
 }
+.modal-img {
+  max-width: 90%;   
+  max-height: 90vh; 
+  height: auto;   
+  width: auto;      
+  display: block;   
+  margin: auto;    
+}
 
 header::after {
   content: "👑";
@@ -221,7 +229,7 @@ header::after {
 }
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #ffe4f0; /* rosa clarinho */
+      background: #ffe4f0;
       color: #333;
       margin: 0;
       padding: 0;
@@ -238,7 +246,7 @@ header::after {
     }
   
     .filme {
-  background: linear-gradient(135deg, #ffe6f0, #ffe0ff); /* fundo rosa claro fofinho */
+  background: linear-gradient(135deg, #ffe6f0, #ffe0ff); 
   border-radius: 20px;
   padding: 15px;
   margin: 15px;
@@ -251,11 +259,11 @@ header::after {
 }
 
 .filme:hover {
-  transform: translateY(-10px) rotate(-1deg); /* efeito fofinho ao passar */
+  transform: translateY(-10px) rotate(-1deg); 
   box-shadow: 0 15px 25px rgba(255, 105, 180, 0.5);
 }
 
-/* caveirinha Monster High dentro do card */
+
 .filme::after {
   content: "";
   background: url('') no-repeat center;
@@ -265,7 +273,7 @@ header::after {
   right: 10px;
   width: 60px;
   height: 60px;
-  opacity: 0.3; /* leve transparência */
+  opacity: 0.3; 
   pointer-events: none;
 }
   
@@ -282,14 +290,14 @@ header::after {
   
     .filme h2 {
   font-family:Arial, Helvetica, sans-serif;
-  color: black; /* títulos pretos */
+  color: black; 
   font-size: 18px;
   margin: 10px 0;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(255, 182, 193, 0.3); /* leve sombra rosa para ficar fofo */
+  text-shadow: 1px 1px 3px rgba(255, 182, 193, 0.3); 
 }
   
-    /* Botões fofinhos dos filmes */
+   
     .filme button {
       margin-top: 10px;
       padding: 12px 25px;
@@ -396,16 +404,16 @@ header::after {
     h2.monster-title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2em;
-  color: black; /* título preto */
+  color: black; 
   text-align: center;
   margin: 30px 0;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* sombra suave e fofinha */
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
   cursor: default;
 }
 
 h2.monster-title:hover {
-  transform: scale(1.1) rotate(-2deg); /* movimento fofinho ao passar o mouse */
+  transform: scale(1.1) rotate(-2deg); 
 }
 
 h2.monster-title:hover {
@@ -448,11 +456,11 @@ body {
     padding: 15px;
     width: 200px;
     text-align: center;
-     /* Novo: para alinhar o botão sempre na parte de baixo */
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 350px; /* Ajuste a altura de acordo com a imagem e título */
+  height: 350px; 
 
   }
   
